@@ -7,6 +7,7 @@
 	<menuitem id="menu_library_member"
 		action="action_library_member"
 		parent="library_app.menu_library"
+		sequence="2"
 		/>
 
 

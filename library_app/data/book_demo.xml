@@ -4,9 +4,29 @@
 	<record model="res.partner" id="res_partner_huxley">
 		<field name="name">Aldous Huxley</field>
 	</record>
-	<record model="library.book" id="library_book_bnw">
+	<record model="library.book" id="library_book_bnw_0">
 		<field name="name">Brave new World</field>
 		<field name="author_ids" eval="[(4,ref('res_partner_huxley'))]" />
 		<field name="date_published">1932-01-01</field>
+	</record> 
+	<record model="library.book" id="library_book_bnw_1">
+		<field name="name">水浒传</field>
+		<field name="date_published">1933-01-01</field>
+	</record>
+	<record model="library.book" id="library_book_bnw_2">
+		<field name="name">Time Simple</field>
+		<field name="date_published">1934-01-01</field>
+	</record>
+	<record model="library.book" id="library_book_bnw_3">
+		<field name="name">Time Simple</field>
+		<field name="date_published">1935-01-01</field>
+	</record>
+	<record model="library.book" id="library_book_bnw_4">
+		<field name="name">红楼梦</field>
+		<field name="date_published">1936-01-01</field>
+	</record>
+	<record model="library.book" id="library_book_bnw_5">
+		<field name="name">西游记</field>
+		<field name="date_published">1937-01-01</field>
 	</record>
 </odoo>

@@ -6,7 +6,8 @@
 	<menuitem id="menu_library_checkout"
 		name="Checkout"
 		action = "action_library_checkout"
-		parent = "library_app.menu_library"	
+		parent = "library_app.menu_library"
+		sequence="3"
 		/>
 
 	<act_window id="action_library_stage"
@@ -17,7 +18,8 @@
 	<menuitem id="menu_library_stage"
 		name="Checkout Stages"
 		action="action_library_stage"
-		parent="library_app.menu_library" />
+		parent="library_app.menu_library"
+		sequence="4" />
 	
 
 </odoo>
