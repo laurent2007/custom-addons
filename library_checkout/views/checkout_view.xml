@@ -41,14 +41,10 @@
 					        states="open,cancel" />
 					<!--attrs="{'invisible': [('state', 'in', ['new', 'done'])]}"-->
 				
-				
-				
 					<field name="stage_id" 
 						widget="statusbar"
-						clickable="True"
+						clickable="False"
 						options="{'fold_field':'fold'}" />
-				
-				
 				
 				</header>
 				<sheet>
@@ -92,8 +88,7 @@
 							<field name="closed_date" 
 								attrs="{'invisible':[('state','in',['new','open'])]}"/>
 						</group>				
-						
-										
+				
 					</group>
 					<notebook>
 						<page string="Borrowed Books" name="page_lines">

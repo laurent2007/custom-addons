@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+	<!-- Data to load -->
+	
+	<record model="library.member" id="library_member_bnw_1">
+		<field name="name">周杰伦</field>
+		
+	</record>
+	<record model="library.member" id="library_member_bnw_2">
+		<field name="name">王力宏</field>
+	
+	</record>
+	<record model="library.member" id="library_member_bnw_3">
+		<field name="name">潘玮柏</field>
+	
+	</record>
+	<record model="library.member" id="library_member_bnw_4">
+		<field name="name">吴克群</field>
+		
+	</record>
+</odoo>

@@ -39,6 +39,8 @@ class Book(models.Model):
     avg_rating = fields.Float('Average Rating',(3,2))
     price = fields.Monetary('Price','currency_id')
     currency_id = fields.Many2one('res.currency') #price helper
+    ##Book Storage 
+    storage = fields.Integer('Book Storage',default=1)
     
     #Date and time fields
     date_published= fields.Date()
@@ -79,7 +81,6 @@ class Book(models.Model):
         
     @api.multi
     def button_check_isbn(self):
-    
         for book in self:
             if not book.isbn:
                 raise Warning('Please provide an ISBN for %s' % book.name)

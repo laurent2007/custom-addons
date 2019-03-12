@@ -17,10 +17,6 @@
 		<field name="name">Time Simple</field>
 		<field name="date_published">1934-01-01</field>
 	</record>
-	<record model="library.book" id="library_book_bnw_3">
-		<field name="name">Time Simple</field>
-		<field name="date_published">1935-01-01</field>
-	</record>
 	<record model="library.book" id="library_book_bnw_4">
 		<field name="name">红楼梦</field>
 		<field name="date_published">1936-01-01</field>

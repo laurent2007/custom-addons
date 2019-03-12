@@ -12,5 +12,6 @@
             'views/member_view.xml',
             'views/book_view.xml',
             'views/book_list_template.xml',
+            'data/member_demo.xml',
         ]
 }

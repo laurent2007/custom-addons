@@ -17,7 +17,9 @@
 							<field name="author_ids" widget="many2many_tags" />
 							<field name="publisher_id" />
 							<field name="date_published" />
-					       	</group>					
+							<field name="storage" />
+							<field name="book_type" />
+					    </group>					
 						<group name="group_right">
 							<field name="isbn" />
 							<field name="active"/>
@@ -37,8 +39,10 @@
 		<field name="arch" type="xml">
 			<tree>
 				<field name="name" />
+				<field name="book_type" />
 				<field name="author_ids" widget="many2many_tags" />
 				<field name="publisher_id" />
+				<field name="storage" />
 				<field name="date_published" />
 			</tree>
 		</field>

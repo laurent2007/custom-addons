@@ -53,13 +53,8 @@ class Checkout(models.Model):
         today = fields.Date.today()
         if self.request_date != today:
             self.request_date = today
-            return{
-                    'warning':{
-                        'title':'changed Request Date',
-                        'message':'Request date changed to today.'
-                        }    
-                }
-
+        #return True
+            
     @api.model
     def create(self,vals):
         #code before create: should use the vals dict

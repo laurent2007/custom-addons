@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_forecast_user,Forecast User,model_forecast_forecast,forecast_group_user,1,0,0,0
+access_forecast_manager,Forecast Manager,model_forecast_forecast,forecast_group_manager,1,1,1,1
+access_session_user,Session User,model_forecast_session,forecast_group_user,1,0,0,0
+access_session_manager,Session Manager,model_forecast_session,forecast_group_manager,1,1,1,1
