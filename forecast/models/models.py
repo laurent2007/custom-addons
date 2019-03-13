@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
+#Course Model
+
 from datetime import timedelta
-from odoo import models, fields, api,exceptions
+from odoo import models, fields, api, exceptions, _
 from odoo.exceptions import Warning,ValidationError
 
 class forecast(models.Model):

@@ -3,18 +3,28 @@
 
 2.如果是英文系统，报表导出，内容有中文的话，会乱码，如何解决
 解决：http://ju.outofmemory.cn/entry/374999
+$ sudo apt-get install ttf-wqy-zenhei 
+$ sudo apt-get install ttf-wqy-microhei
+
+报表wkhtmltopdf 组件 
+wkhtmltopdf --version
+wget "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb" -O /tmp/wkhtml.deb
+sudo dpkg -i /tmp/wkhtml.deb
+
 
 3.如何新增管理员，
 
 4.备份，还原，数据库。
 备份：多台服务器备份（万一一台服务器数据库损坏，每日自动备份数据库）
 
+   
+5.超级用户账号密码
+数据库管理密码：860510
+dev0313
+laurent2007@163.com	
+860510
 
-
-            return{
-                    'warning':{
-                        'title':'changed Request Date',
-                        'message':'Request date changed to today.'
-                        }    
-                }
+用户：
+user1@zykana.com 
+860510
 

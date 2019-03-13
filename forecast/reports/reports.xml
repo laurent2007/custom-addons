@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+    <report id="report_session"
+            model="forecast.session"
+            string="Session Report"
+            name="forecast.report_session_view"
+            file="forecast.report_session"
+            report_type="qweb-pdf" />
+
+    <template id="report_session_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name"></h2>
+                        <p>From <span t-field="doc.start_date"/></p>
+                        <h3>Attendees:</h3>
+                        <ul>
+                            <t t-foreach="doc.attendee_ids" t-as="attendee">
+                                <li><span t-field="attendee.name"></span></li>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+            </t>    
+        </t>
+    </template>
+    
+</odoo>
