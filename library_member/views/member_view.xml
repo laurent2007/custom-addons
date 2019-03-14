@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-
 <odoo>
 	<record id="view_form_member" model="ir.ui.view">
 		<field name="name">Library Member Form</field>
@@ -24,12 +23,11 @@
 		<field name="name">Library Member List</field>
 		<field name="model">library.member</field>
 		<field name="arch" type="xml">
-			<form>
-				<group>
-					<field name="name" />
-					<field name="card_number" />
-				</group>
-			</form>
+			<tree>
+				<field name="name" />
+				<field name="email" />
+				<field name="card_number" />
+			</tree>
 		</field>
 	</record>
 

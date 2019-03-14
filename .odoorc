@@ -1,17 +1,17 @@
 [options]
 addons_path = /home/laurent/custom-addons,/home/laurent/odoo-dev/odoo/addons
-admin_passwd = admin
+admin_passwd = $pbkdf2-sha512$25000$EwJgLEWolbLWeu99j3HOWQ$xu9x1Bi2eoSPWFZZMEIUS/MMEdBaDH/s.2kvsmhrI.kxDwK2D/z1MFfwZoPyKc7kq7nSEhdzh1bf//na/nnxIw
 csv_internal_sep = ,
 data_dir = /home/laurent/.local/share/Odoo
 db_host = False
 db_maxconn = 64
-db_name = dev12
+db_name = dev0313
 db_password = False
 db_port = False
 db_sslmode = prefer
 db_template = template0
 db_user = False
-dbfilter = 
+dbfilter = dev0313
 demo = {}
 email_from = False
 geoip_database = /usr/share/GeoIP/GeoLite2-City.mmdb

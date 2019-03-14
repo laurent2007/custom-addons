@@ -9,7 +9,7 @@ from odoo.exceptions import Warning,ValidationError
 class forecast(models.Model):
      _name = 'forecast.forecast'
 
-     name = fields.Char(string="Title",required=True)
+     name = fields.Char(string="Title",required=True,translate=True)
      
      value = fields.Integer()
      value2 = fields.Float(compute="_value_pc", store=True)
@@ -26,7 +26,7 @@ class forecast(models.Model):
         ondelete='set null', string="Responsible", index=True)
      
      session_ids=fields.One2many('forecast.session','course_id',string="Sessions")
-     
+
      
      @api.multi
      def copy(self,default=None):

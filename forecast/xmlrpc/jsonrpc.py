@@ -44,4 +44,5 @@ args = {
     'responsible_id':uid,
 }
 course_id = call(url, "object", "execute", DB, uid, PASSWD, 'forecast.forecast', 'create', args)
+print(course_id)
 
