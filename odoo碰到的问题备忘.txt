@@ -33,6 +33,12 @@ user1@zykana.com
 860510
 
 
+5.1.2  [116.131]系统
+admin
+admin
+
+
+
 6.系统制作镜像
 wget ftp://ftp.gwdg.de/pub/linux/easyvdr/mirror/remastersys/ubuntu/remastersys-gui/remastersys-gui_3.0.4-1_amd64.debwget wget http://security.ubuntu.com/ubuntu/pool/universe/x/xresprobe/xresprobe_0.4.24ubuntu9_amd64.deb -O /tmp/xresprobe.deb
 
