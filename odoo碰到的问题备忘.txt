@@ -37,9 +37,18 @@ user1@zykana.com
 admin
 admin
 
+5.1.3  [116.135]系统
+admin   
+admin
+
+
 
 
 6.系统制作镜像
 wget ftp://ftp.gwdg.de/pub/linux/easyvdr/mirror/remastersys/ubuntu/remastersys-gui/remastersys-gui_3.0.4-1_amd64.debwget wget http://security.ubuntu.com/ubuntu/pool/universe/x/xresprobe/xresprobe_0.4.24ubuntu9_amd64.deb -O /tmp/xresprobe.deb
 
 8.主题install 会引用报错
+
+9.odoo12 会计模块 试用情况
+zykana.odoo.com
+
