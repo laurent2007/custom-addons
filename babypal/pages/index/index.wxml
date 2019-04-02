@@ -22,6 +22,10 @@
   </block>
 </view>
 
+<view class='bold_font'>
+  <text>本期打榜商家</text>
+</view>
+
 <view class='items-list'>
   <view class='pro-item' wx:for="{{ proList }}" bindtap='toDetail' data-index="{{index}}">
     <image src="{{ item.logo}}" class='pro-logo'></image>

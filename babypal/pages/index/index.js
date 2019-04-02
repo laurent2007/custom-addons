@@ -16,19 +16,19 @@ Page({
 
     navlist:[
       {
-        nav_src:'/images/icon.png',
+        nav_src:'/images/icon1.png',
         nav_title:'新人专享'
       },
       {
-        nav_src: '/images/icon.png',
+        nav_src: '/images/icon2.png',
         nav_title: '每日抽奖'
       },
       {
-        nav_src: '/images/icon.png',
+        nav_src: '/images/icon3.png',
         nav_title: '0元拿'
       },
       {
-        nav_src: '/images/icon.png',
+        nav_src: '/images/icon4.png',
         nav_title: '添加有礼'
       }
     ],

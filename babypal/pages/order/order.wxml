@@ -1,0 +1,5 @@
+<view class="page-container">
+  <image src="/images/123.png" class='imageShow'></image>
+  <text class="normal_font">请登录后查看订单</text>
+  <button class='btn_redline' style='margin-top:30rpx;'>登录</button>
+</view>

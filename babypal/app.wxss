@@ -16,6 +16,18 @@
   align-self: center;
 } 
 
+.normal_font{
+  font-size: 14px;
+  letter-spacing:0.3ch;
+}
+
+
+.btn_redline{
+  border: 1px solid #ff6666;
+  color: #ff6666;
+  width: 380rpx;
+}
+
 .location{
   align-content: center;
   align-self: center;
