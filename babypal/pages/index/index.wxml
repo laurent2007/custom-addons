@@ -1,0 +1,46 @@
+<view class="header">
+  <image class="icon" src='/images/location.png'></image>
+  <view class="location">上海</view>
+  <view class='empty'></view>
+  <view class='grey_12'>已服务2615万用户</view>
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='navtoggle'>
+  <block wx:for="{{navlist}}">
+    <view class='navtoggle_block'>
+      <image src="{{item.nav_src}}" class='avator'></image>
+      <text class="navtoggle_title">{{item.nav_title}}</text>
+    </view>
+  </block>
+</view>
+
+<view class='items-list'>
+  <view class='pro-item' wx:for="{{ proList }}" bindtap='toDetail' data-index="{{index}}">
+    <image src="{{ item.logo}}" class='pro-logo'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>{{ item.title}}</view>
+      <view class='pro-centent-1'>
+        <text class='pro-desc'>{{ item.type}}</text>
+        <text class='pro-desc'>{{ item.province}}</text>
+        <text class='pro-desc' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.distance}}m</text>
+      </view>
+
+      <view class="pro-label">{{ item.label }}</view>
+      <view class="pro-tag">{{ item.tag }}</view>
+      <view class='pro-footer'>
+        <!-- <image class='btn-detail' src='/images/btn_detail.png'></image>
+        <button open-type="contact" class='btn-ask'>
+          <image src='/images/btn_ask.png'></image>
+        </button> -->
+      </view>
+    </view>
+  </view>
+</view>

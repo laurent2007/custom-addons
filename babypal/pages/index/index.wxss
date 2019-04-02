@@ -1,0 +1,121 @@
+/**index.wxss**/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  align-content: center;
+  align-self: center;
+}
+
+swiper {
+  width: 90%;
+  height: 350rpx;
+  text-align: center;
+  margin-left: 36rpx;
+  margin-right: 36rpx;
+  margin-top: 10rpx;
+}
+
+swiper image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navtoggle {
+  margin-top: 60rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.navtoggle_block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avator {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+ 
+}
+
+.navtoggle_title {
+  margin-top: 20rpx;
+  font-size: 11px;
+  font-family: "雅黑";
+}
+
+/*items-list*/
+
+.items-list{
+  margin-top: 40rpx;
+}
+.pro-item {
+  overflow: hidden;
+  padding: 30rpx;
+}
+
+.pro-logo {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.pro-body {
+  margin-left: 180rpx;
+}
+
+.pro-title {
+  color: #212121;
+  font-size: 34rpx;
+  line-height: 1;
+}
+
+.pro-centent-1{
+  /* flex: 1;
+  display: flex;
+  flex-direction: row; */
+}
+
+.pro-distance{
+  align-self:flex-end;
+  align-items:flex-end;
+  align-content:flex-end;
+}
+
+.pro-desc{
+  color: #9a9a9a;
+  font-size: 26rpx;
+  line-height: 1;
+}
+
+.pro-label{
+  color: #9a9a9a;
+  font-size: 26rpx;
+  line-height: 1;
+  margin-top:10rpx;
+}
+.pro-tag{
+  color: #9a9a9a;
+  font-size: 26rpx;
+  line-height: 1;
+  margin-top:14rpx;
+}
+
+.pro-footer {
+  overflow: hidden;
+}
+
