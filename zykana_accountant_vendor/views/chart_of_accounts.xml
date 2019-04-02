@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_tree_chart_of_accounts" model="ir.ui.view">
+		<field name="name">科目列表</field>
+		<field name="model">chart.of.accounts</field>
+		<field name="arch" type="xml">
+			<tree>
+                <field name="coa_code" />
+				<field name="coa_name" />
+				<field name="coa_type" />
+                <field name="initial_borrower" />
+                <field name="initial_lender" />
+			</tree>
+		</field>
+	</record>
+</odoo>

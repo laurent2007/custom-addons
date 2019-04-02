@@ -7,22 +7,474 @@
               groups="base.group_user,base.group_partner_manager" />
 
 	
-	<act_window id="action_chart_of_accounts"
-		name="科目表"
+	<!--Action Start-->
+	
+	<!--客户-->
+	<act_window id="action_invoice"
+		name="发票"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_red_invoice"
+		name="红字发票"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_payment"
+		name="付款"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_dunning_report"
+		name="催款报告"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_product"
+		name="产品"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_customer"
+		name="客户"
 		res_model="chart.of.accounts"
 		view_mode="tree,form" />
 
+	<!--供应商-->
+	<act_window id="action_bill"
+		name="账单"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_red_bill"
+		name="红字账单"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_vendor_payment"
+		name="付款"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_vendor_product"
+		name="产品"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_vendor"
+		name="供应商"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<!--概览-->
+	<act_window id="action_overview"
+		name="概览"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<!--会计-->
+	<act_window id="action_voucher_entrys"
+		name="凭证录入"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_diary_items"
+		name="日记账项目"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_write_off"
+		name="核销"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_tax_adjustment"
+		name="税调整"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_lock_date"
+		name="锁定日期"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	
+	<!--报告-->
+	
+	<act_window id="action_report_profit_and_loss_statement"
+		name="损益表"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_balance_sheet"
+		name="资产负债表"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_statement_of_cash_flow"
+		name="现金流量表"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_executive_summary"
+		name="执行摘要"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_business_partner_ledger"
+		name="业务伙伴分类账"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_receivables_due"
+		name="到期的应收"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_payments_due"
+		name="到期的应付"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_general_ledger"
+		name="总分类账"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_trial_balance"
+		name="试算表"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_consolidated_journal"
+		name="合并日记账"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_tax_report"
+		name="税金报告"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_journal_audit"
+		name="日记账审计"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_report_invoice"
+		name="发票"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+
+	<!--配置-->
+	
+	<act_window id="action_config_setting"
+		name="设置"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_chart_of_accounts"
+		name="科目表"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_tax_rate_setting"
+		name="税率设置"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_tax_subject_adjustment"
+		name="税科目调整"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_bank_account"
+		name="银行账户"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_document_type"
+		name="凭证类型"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_trade_terms"
+		name="贸易条款"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_verification_model"
+		name="核销模型"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_payment_provision"
+		name="付款条款"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_product_category"
+		name="产品类别"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+	<act_window id="action_config_payment_method"
+		name="支付方式"
+		res_model="chart.of.accounts"
+		view_mode="tree,form" />
+	
+
+	<!--菜单配置开始-->
+	
+	<!--概览-->
     <menuitem id="accounts_menu_overview" 
 		name="概览"
 		parent="menu_accounts"
         groups="base.group_system"
+		action="action_overview"
 		sequence="1" />
 
+
+	<!--客户-->
+	<menuitem id="accounts_menu_customer" 
+		name="客户"
+		parent="menu_accounts"
+		groups="base.group_system"
+		sequence="2" />
+
+
+	<menuitem id="menu_account_invoice"
+        name="发票"
+		action="action_invoice"
+        sequence="1"
+        parent="accounts_menu_customer"/>
+	
+	<menuitem id="menu_account_red_invoice"
+        name="红字发票"
+		action="action_red_invoice"
+        sequence="2"
+        parent="accounts_menu_customer"/>
+	
+	<menuitem id="menu_account_payment"
+        name="付款"
+		action="action_payment"
+        sequence="3"
+        parent="accounts_menu_customer"/>
+	
+	<menuitem id="menu_account_dunning_report"
+        name="催款报告"
+		action="action_dunning_report"
+        sequence="4"
+        parent="accounts_menu_customer"/>
+	
+	<menuitem id="menu_account_product"
+        name="产品"
+		action="action_product"
+        sequence="5"
+        parent="accounts_menu_customer"/>
+	
+	<menuitem id="menu_account_customer"
+        name="客户"
+		action="action_customer"
+        sequence="6"
+        parent="accounts_menu_customer"/>
+
+
+	<!--供应商-->
+	<menuitem id="accounts_menu_vendor" 
+		name="供应商"
+		parent="menu_accounts"
+		groups="base.group_system"
+		sequence="3" />
+
+	<menuitem id="menu_account_bill"
+        name="账单"
+		action="action_bill"
+        sequence="1"
+        parent="accounts_menu_vendor"/>
+	
+	<menuitem id="menu_account_red_bill"
+        name="红字账单"
+		action="action_red_bill"
+        sequence="2"
+        parent="accounts_menu_vendor"/>
+	
+	<menuitem id="menu_account_vendor_payment"
+        name="付款"
+		action="action_vendor_payment"
+        sequence="3"
+        parent="accounts_menu_vendor"/>
+
+	<menuitem id="menu_account_vendor_product"
+        name="产品"
+		action="action_vendor_product"
+        sequence="4"
+        parent="accounts_menu_vendor"/>
+	
+	<menuitem id="menu_account_vendor"
+        name="供应商"
+		action="action_vendor"
+        sequence="5"
+        parent="accounts_menu_vendor"/>
+
+	<!--会计-->
+	<menuitem id="accounts_menu_account" 
+		name="会计"
+		parent="menu_accounts"
+		groups="base.group_system"
+		sequence="4" />
+
+
+	<menuitem id="menu_account_accounts_list"
+        name="会计分录"
+        sequence="1"
+        parent="accounts_menu_account"/>
+	
+	<!--凭证录入-->
+	<menuitem id="menu_action_voucher_entrys"
+        action="action_voucher_entrys"
+        parent="menu_account_accounts_list"
+        sequence="1"/>
+
+	<!--日记账项目-->
+	<menuitem id="menu_action_diary_items"
+        action="action_diary_items"
+        parent="menu_account_accounts_list"
+        sequence="2"/>
+	
+	<menuitem id="menu_account_accounts_act"
+        name="动作"
+        sequence="2"
+        parent="accounts_menu_account"/>
+	
+	<!--核销-->
+	<menuitem id="menu_action_write_off"
+        action="action_write_off"
+        parent="menu_account_accounts_act"
+        sequence="1"/>
+
+	<!--税调整-->
+	<menuitem id="menu_action_tax_adjustment"
+        action="action_tax_adjustment"
+        parent="menu_account_accounts_act"
+        sequence="2"/>
+	
+	<!--锁定日期-->
+	<menuitem id="menu_action_lock_date"
+        action="action_lock_date"
+        parent="menu_account_accounts_act"
+        sequence="3"/>
+
+	
+
+	<!--报告-->
+	<menuitem id="accounts_menu_report" 
+		name="报告"
+		parent="menu_accounts"
+		groups="base.group_system"
+		sequence="5" />
+
+
+	<menuitem id="menu_account_report_common"
+        name="通用报告"
+        sequence="1"
+        parent="accounts_menu_report"/>
+	
+	
+	<menuitem id="menu_action_report_profit_and_loss_statement"
+        action="action_report_profit_and_loss_statement"
+        parent="menu_account_report_common"
+        sequence="1"/>
+	
+	<menuitem id="menu_action_report_balance_sheet"
+        action="action_report_balance_sheet"
+        parent="menu_account_report_common"
+        sequence="2"/>
+	
+	<menuitem id="menu_action_report_statement_of_cash_flow"
+        action="action_report_statement_of_cash_flow"
+        parent="menu_account_report_common"
+        sequence="3"/>
+	
+	<menuitem id="menu_action_report_executive_summary"
+        action="action_report_executive_summary"
+        parent="menu_account_report_common"
+        sequence="4"/>
+	
+	<menuitem id="menu_account_report_partner_reports"
+        name="合作伙伴的报告"
+        sequence="2"
+        parent="accounts_menu_report"/>
+	
+	<menuitem id="menu_action_report_business_partner_ledger"
+        action="action_report_business_partner_ledger"
+        parent="menu_account_report_partner_reports"
+        sequence="1"/>
+	
+	<menuitem id="menu_action_report_receivables_due"
+        action="action_report_receivables_due"
+        parent="menu_account_report_partner_reports"
+        sequence="2"/>
+	
+	<menuitem id="menu_action_report_payments_due"
+        action="action_report_payments_due"
+        parent="menu_account_report_partner_reports"
+        sequence="3"/>
+
+	<menuitem id="menu_account_report_audit_reports"
+        name="审计报告"
+        sequence="3"
+        parent="accounts_menu_report"/>
+	
+	
+	<menuitem id="menu_action_report_general_ledger"
+        action="action_report_general_ledger"
+        parent="menu_account_report_audit_reports"
+        sequence="1"/>
+	
+	<menuitem id="menu_action_report_trial_balance"
+        action="action_report_trial_balance"
+        parent="menu_account_report_audit_reports"
+        sequence="2"/>
+	
+	<menuitem id="menu_action_report_consolidated_journal"
+        action="action_report_consolidated_journal"
+        parent="menu_account_report_audit_reports"
+        sequence="3"/>
+	
+	<menuitem id="menu_action_report_tax_report"
+        action="action_report_tax_report"
+        parent="menu_account_report_audit_reports"
+        sequence="4"/>
+	
+	<menuitem id="menu_action_report_journal_audit"
+        action="action_report_journal_audit"
+        parent="menu_account_report_audit_reports"
+        sequence="5"/>
+	
+	<menuitem id="menu_account_report_manage"
+        name="管理"
+        sequence="4"
+        parent="accounts_menu_report"/>
+
+	<menuitem id="menu_action_report_invoice"
+        action="action_report_invoice"
+        parent="menu_account_report_manage"
+        sequence="1"/>
+
+
+	<!--配置-->
 	<menuitem id="accounts_menu_configure" 
 		name="配置"
 		parent="menu_accounts"
         groups="base.group_system"
-		sequence="2" />
+		sequence="6" />
+
+	<menuitem id="menu_configure_setting"
+		action="action_config_setting"
+        sequence="1"
+        parent="accounts_menu_configure"/>
 
     <menuitem id="menu_configure_accounts"
         name="会计"
@@ -30,8 +482,65 @@
         parent="accounts_menu_configure"/>
     
     <menuitem id="menu_action_chart_of_accounts"
-        action="action_chart_of_accounts"
+        action="action_config_chart_of_accounts"
         parent="menu_configure_accounts"
+        sequence="1"/>
+	
+	<menuitem id="menu_action_tax_rate_setting"
+        action="action_config_tax_rate_setting"
+        parent="menu_configure_accounts"
+        sequence="2"/>
+	
+	<menuitem id="menu_action_tax_subject_adjustment"
+        action="action_config_tax_subject_adjustment"
+        parent="menu_configure_accounts"
+        sequence="3"/>
+	
+	<menuitem id="menu_action_bank_account"
+        action="action_config_bank_account"
+        parent="menu_configure_accounts"
+        sequence="4"/>
+	
+	<menuitem id="menu_action_document_type"
+        action="action_config_document_type"
+        parent="menu_configure_accounts"
+        sequence="5"/>
+	
+	<menuitem id="menu_action_trade_terms"
+        action="action_config_trade_terms"
+        parent="menu_configure_accounts"
+        sequence="6"/>
+	
+	<menuitem id="menu_action_verification_model"
+        action="action_config_verification_model"
+        parent="menu_configure_accounts"
+        sequence="7"/>
+	
+	
+	<menuitem id="menu_configure_manage"
+        name="管理"
+        sequence="3"
+        parent="accounts_menu_configure"/>
+	
+	<menuitem id="menu_action_payment_provision"
+        action="action_config_payment_provision"
+        parent="menu_configure_manage"
+        sequence="1"/>
+	
+	<menuitem id="menu_action_product_category"
+        action="action_config_product_category"
+        parent="menu_configure_manage"
+        sequence="2"/>
+	
+	<menuitem id="menu_configure_payment"
+        name="付款"
+        sequence="4"
+        parent="accounts_menu_configure"/>
+	
+	
+	<menuitem id="menu_action_payment_method"
+        action="action_config_payment_method"
+        parent="menu_configure_payment"
         sequence="1"/>
 	
 </odoo>
