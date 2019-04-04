@@ -80,7 +80,7 @@
 	
 	<act_window id="action_diary_items"
 		name="日记账项目"
-		res_model="chart.of.accounts"
+		res_model="account.journal.items"
 		view_mode="tree,form" />
 	
 	<act_window id="action_write_off"
