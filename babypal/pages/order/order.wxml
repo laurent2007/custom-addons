@@ -1,5 +1,33 @@
 <view class="page-container">
-  <image src="/images/123.png" class='imageShow'></image>
-  <text class="normal_font">请登录后查看订单</text>
-  <button class='btn_redline' style='margin-top:30rpx;'>登录</button>
+  <view wx:if="{{!hasUserInfo && canIUse}}" class='page-center'>
+    <image src="http://www.zykana.com/res/babypal/123.png" class='imageShow'></image>
+    <text class="normal_font">请登录后查看订单</text>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='btn_redline' style='margin-top:30rpx;'>登录</button>
+  </view>
+  <view wx:else>
+    <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+    <!-- <text class="userinfo-nickname">{{userInfo.nickName}},您还未创建订单，请返回首页!</text> -->
+
+    <view class="swiper-tab">
+      <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部订单</view>
+      <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">周期服务</view>
+
+    </view>
+
+    <swiper current="{{currentTab}}" class="swiper" duration="300" style="height:{{winHeight - 30}}px" bindchange="bindChange">
+      <swiper-item>
+        <view>
+          <image src='http://www.zykana.com/res/babypal/no_order.png' class='imageShow'></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view>
+          <image src='http://www.zykana.com/res/babypal/no_order.png' class='imageShow'></image>
+        </view>
+      </swiper-item>
+
+    </swiper>
+
+  </view>
 </view>

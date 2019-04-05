@@ -5,9 +5,9 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [
-      '/images/swiper01s.jpg',
-      '/images/swiper02s.jpg',
-      '/images/swiper03s.jpg'
+      'http://www.zykana.com/res/babypal/swiper01s.jpg',
+      'http://www.zykana.com/res/babypal/swiper02s.jpg',
+      'http://www.zykana.com/res/babypal/swiper03s.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
@@ -16,26 +16,26 @@ Page({
 
     navlist:[
       {
-        nav_src:'/images/icon1.png',
+        nav_src:'http://www.zykana.com/res/babypal/icon1.png',
         nav_title:'新人专享'
       },
       {
-        nav_src: '/images/icon2.png',
+        nav_src: 'http://www.zykana.com/res/babypal/icon2.png',
         nav_title: '每日抽奖'
       },
       {
-        nav_src: '/images/icon3.png',
+        nav_src: 'http://www.zykana.com/res/babypal/icon3.png',
         nav_title: '0元拿'
       },
       {
-        nav_src: '/images/icon4.png',
+        nav_src: 'http://www.zykana.com/res/babypal/icon4.png',
         nav_title: '添加有礼'
       }
     ],
 
     proList: [
       {
-        logo: "/images/1.jpg",
+        logo: "http://www.zykana.com/res/babypal/1.jpg",
         title: "飞羽宝宝早教中心",
         desc: "四川山水甲天下\n有山有水好风光",
         label:'本地区最热推荐',
@@ -46,7 +46,7 @@ Page({
         distance:'500'
       },
       {
-        logo: "/images/2.jpg",
+        logo: "http://www.zykana.com/res/babypal/2.jpg",
         title: "葡萄云美术教育",
         desc: "地中海传奇\n一生一定要去的地方",
         label: '本地区最热推荐',
@@ -57,7 +57,7 @@ Page({
         distance: '500'
       },
       {
-        logo: "/images/3.jpg",
+        logo: "http://www.zykana.com/res/babypal/3.jpg",
         title: "蒙特利梭国际早教中心",
         desc: "印度泰姬陵\n看阿三看阿三",
         label: '本地区最热推荐',

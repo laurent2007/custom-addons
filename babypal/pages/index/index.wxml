@@ -1,5 +1,5 @@
 <view class="header">
-  <image class="icon" src='/images/location.png'></image>
+  <image class="icon" src='http://www.zykana.com/res/babypal/location.png'></image>
   <view class="location">上海</view>
   <view class='empty'></view>
   <view class='grey_12'>已服务2615万用户</view>

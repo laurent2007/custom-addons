@@ -26,6 +26,7 @@
   border: 1px solid #ff6666;
   color: #ff6666;
   width: 380rpx;
+  background-color: transparent;
 }
 
 .location{
@@ -45,4 +46,28 @@
   padding: 0 0 10rpx 20rpx;
   height: 36rpx;
 
+}
+
+.userinfo-avatar {
+  width: 98rpx;
+  height: 98rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 12px;
+  padding: 0 0 10rpx 20rpx;
+  height: 36rpx;
 }
