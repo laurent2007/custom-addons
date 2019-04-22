@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    isGetDataOnCloud: false, //首页数据是否读取云端
+    selectedCity: '', //选中的城市
   }
 })

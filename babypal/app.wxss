@@ -71,3 +71,9 @@
   padding: 0 0 10rpx 20rpx;
   height: 36rpx;
 }
+
+
+.title {
+  font-size: 14px;
+  margin-left: 24rpx;
+}

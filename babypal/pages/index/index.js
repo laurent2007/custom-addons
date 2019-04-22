@@ -14,10 +14,9 @@ Page({
     interval: 5000,
     duration: 1000,
 
-    navlist:[
-      {
-        nav_src:'http://www.zykana.com/res/babypal/icon1.png',
-        nav_title:'新人专享'
+    navlist: [{
+        nav_src: 'http://www.zykana.com/res/babypal/icon1.png',
+        nav_title: '新人专享'
       },
       {
         nav_src: 'http://www.zykana.com/res/babypal/icon2.png',
@@ -33,17 +32,16 @@ Page({
       }
     ],
 
-    proList: [
-      {
+    proList: [{
         logo: "http://www.zykana.com/res/babypal/1.jpg",
         title: "飞羽宝宝早教中心",
         desc: "四川山水甲天下\n有山有水好风光",
-        label:'本地区最热推荐',
-        province:'   闵行区',
-        tag:'0-12岁 小课时包',
-        type:'儿童美术',
-        price:'4770',
-        distance:'500'
+        label: '本地区最热推荐',
+        province: '   闵行区',
+        tag: '0-12岁 小课时包',
+        type: '儿童美术',
+        price: '4770',
+        distance: '500'
       },
       {
         logo: "http://www.zykana.com/res/babypal/2.jpg",
@@ -68,21 +66,47 @@ Page({
         distance: '500'
       }
     ],
+    //已选择城市--初始化应该是读取历史访问中的数据
+    selectedCity: "上海市",
 
   },
+
+  selectCity: function() {
+    wx.navigateTo({
+      url: '/pages/index/city',
+    })
+  },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+
+  onShow: function() {
+    //获取历史访问中的城市数据 2018-05-24
+    var selectedCityObject = wx.getStorageSync("selectedCity") || "";
+    var selectedCity = "";
+    if (selectedCityObject.length > 0) {
+      selectedCity = selectedCityObject;
+    }
+    if(selectedCity != "")
+    {
+      this.setData({
+        selectedCity: selectedCity,
+      })
+    }
+   
+  },
+
+  onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {

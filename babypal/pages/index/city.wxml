@@ -1,0 +1,57 @@
+<view class='choose-City'>
+  <text>选中城市：</text> 
+  <text class='name'>{{chooseCity}}</text>
+</view>
+
+<!-- 右侧快捷字母导航栏  -->
+<view class='letter-nav'>
+  <view wx:for="{{letter}}" wx:key="{{index}}" style='height:{{letterHeight}}px;' catchtouchstart='changeShowLetter' data-letter="{{item}}" catchtouchmove='letterTouchMove'>{{item}}</view>
+</view>
+
+<scroll-view style='height:{{windowHeight}}px;' scroll-y="true" scroll-into-view="{{showLetter}}">
+  <view wx:for="{{cityList}}" wx:key="{{item.tag}}}" class='selection' id="{{item.tag}}">
+    <!--  如果是A模块，则渲染历史模块和热门城市模块  -->
+    <block wx:if="{{index === 0}}">
+       
+        <!-- 定位城市  -->
+       <!-- <block>
+          <view class='hot-city'>
+            <text class='title'>定位城市:</text>  
+            <view class='container_city'>
+              <text  bindtap='updateChooseCity' data-city='{{item}}' wx:key="{{item.id}}">上海市</text>
+            </view>
+          </view>
+       </block> -->
+       <!-- 历史访问模块  -->
+       <block wx:if="{{cityHistory.length}}" >
+         <view class='history-city'>
+          <text class='title'>历史访问:</text>  
+          <view class='container_city'>
+            <text  bindtap='updateChooseCity' data-city='{{item}}' wx:for="{{cityHistory}}" wx:key="{{index}}">{{item}}</text>
+          </view>
+        </view>
+       </block>
+       <!-- 热门城市  -->
+       <block>
+          <view class='hot-city'>
+            <text class='title'>热门城市:</text>  
+            <view class='container_city'>
+              <text  bindtap='updateChooseCity' data-city='{{item.name}}' wx:for="{{cityList[0].cities}}" wx:key="{{item.id}}">{{item.name}}</text>
+            </view>
+          </view>
+       </block>
+    </block>
+   <!-- 渲染所有城市  -->
+   <block wx:if="{{index != 0}}">
+    <view class='item-letter'>{{item.tag}}</view>
+    <view bindtap='updateChooseCity' data-city='{{ci.name}}'  class='item-city' wx:for="{{item.cities}}" wx:for-item="ci" wx:key="{{ci.id}}">
+    {{ci.name}}</view>
+   </block>
+    
+  </view>
+</scroll-view>
+
+
+
+
+
